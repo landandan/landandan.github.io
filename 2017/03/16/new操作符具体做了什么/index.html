@@ -6,15 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://landandan.cn">
-  <title>标签云 | 懒蛋蛋博客</title>
+  <title>new操作符具体做了什么 | 懒蛋蛋博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="标签云">
-<meta property="og:url" content="http://landandan.cn/tags/index.html">
+  <meta name="description" content="用new调用一个函数发生了这些事：（1）新建一个对象1var instance = new Object();
+（2）设置原型链1instance.__proto__ = F.prototype;
+（3）让F中的this指向instance，执行F的函数体。（4）判断F的返回值类型：如果是值类型，就丢弃它，还是返回instance。如果是引用类型，就返回这个引用类型的对象，替换掉instance。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="new操作符具体做了什么">
+<meta property="og:url" content="http://landandan.cn/2017/03/16/new操作符具体做了什么/index.html">
 <meta property="og:site_name" content="懒蛋蛋博客">
-<meta property="og:updated_time" content="2017-03-02T09:05:42.000Z">
+<meta property="og:description" content="用new调用一个函数发生了这些事：（1）新建一个对象1var instance = new Object();
+（2）设置原型链1instance.__proto__ = F.prototype;
+（3）让F中的this指向instance，执行F的函数体。（4）判断F的返回值类型：如果是值类型，就丢弃它，还是返回instance。如果是引用类型，就返回这个引用类型的对象，替换掉instance。">
+<meta property="og:updated_time" content="2017-03-16T02:04:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签云">
+<meta name="twitter:title" content="new操作符具体做了什么">
+<meta name="twitter:description" content="用new调用一个函数发生了这些事：（1）新建一个对象1var instance = new Object();
+（2）设置原型链1instance.__proto__ = F.prototype;
+（3）让F中的this指向instance，执行F的函数体。（4）判断F的返回值类型：如果是值类型，就丢弃它，还是返回instance。如果是引用类型，就返回这个引用类型的对象，替换掉instance。">
   
     <link rel="alternative" href="/atom.xml" title="懒蛋蛋博客" type="application/atom+xml">
   
@@ -146,27 +155,32 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-undefined" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-new操作符具体做了什么" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      标签云
+      new操作符具体做了什么
     </h1>
   
 
         
-        <a href="/tags/index.html" class="archive-article-date">
-  	<time datetime="2017-02-27T01:27:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-27</time>
+        <a href="/2017/03/16/new操作符具体做了什么/" class="archive-article-date">
+  	<time datetime="2017-03-16T02:01:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>用new调用一个函数发生了这些事：<br>（1）新建一个对象<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> instance = <span class="keyword">new</span> <span class="built_in">Object</span>();</div></pre></td></tr></table></figure></p>
+<p>（2）设置原型链<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">instance.__proto__ = F.prototype;</div></pre></td></tr></table></figure></p>
+<p>（3）让F中的this指向instance，执行F的函数体。<br>（4）判断F的返回值类型：<br>如果是值类型，就丢弃它，还是返回instance。<br>如果是引用类型，就返回这个引用类型的对象，替换掉instance。</p>
+<hr>
+<p>注：<br>（1）如果没有写return，相当于return undefined，JavaScript中的函数都是这样。undefined是值类型的，因此丢弃它，返回instance。<br>（2）如果return this相当于返回一个引用类型的对象，它自己就是instance，无所谓替换不替换了。<br>（3）对instance并不需要设置它的constructor属性，这个属性在instance的原型中。<br>console.assert(!p.hasOwnProperty(‘constructor’));<br>console.assert(F.prototype.hasOwnProperty(‘constructor’));<br>而且，任意一个新函数在创建时，原型的constructor就已经设置好了。<br>var G=function(){};<br>console.assert(G.prototype.hasOwnProperty(‘constructor’));<br>console.assert(G.prototype.constructor===G);<br>于是，这也要求我们在对prototype重新赋值的时候，重新指定constructor属性。<br>F.prototype={<br>    constructor:F<br>};</p>
+
       
 
       
@@ -245,7 +259,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://landandan.cn/tags/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://landandan.cn/2017/03/16/new操作符具体做了什么/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -257,6 +271,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2017/04/19/React-Native-Network-Request-Failed/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          React Native Network Request Failed
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/15/买啤酒/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">买啤酒</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 
 
@@ -289,7 +322,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

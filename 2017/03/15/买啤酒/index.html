@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://landandan.cn">
-  <title>标签云 | 懒蛋蛋博客</title>
+  <title>买啤酒 | 懒蛋蛋博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="标签云">
-<meta property="og:url" content="http://landandan.cn/tags/index.html">
+  <meta name="description" content="啤酒2块钱一瓶，两个瓶身可以兑换一瓶啤酒，4个瓶盖可以兑换一瓶啤酒，10块钱能买到多少啤酒？？？
+12345678910111213141516171819var Beer = function()&amp;#123;	this.price = 2	this.buy = function(money)&amp;#123;		var count = 0, currentCount = 0,		 tempMoney">
+<meta property="og:type" content="article">
+<meta property="og:title" content="买啤酒">
+<meta property="og:url" content="http://landandan.cn/2017/03/15/买啤酒/index.html">
 <meta property="og:site_name" content="懒蛋蛋博客">
-<meta property="og:updated_time" content="2017-03-02T09:05:42.000Z">
+<meta property="og:description" content="啤酒2块钱一瓶，两个瓶身可以兑换一瓶啤酒，4个瓶盖可以兑换一瓶啤酒，10块钱能买到多少啤酒？？？
+12345678910111213141516171819var Beer = function()&amp;#123;	this.price = 2	this.buy = function(money)&amp;#123;		var count = 0, currentCount = 0,		 tempMoney">
+<meta property="og:updated_time" content="2017-03-15T02:32:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签云">
+<meta name="twitter:title" content="买啤酒">
+<meta name="twitter:description" content="啤酒2块钱一瓶，两个瓶身可以兑换一瓶啤酒，4个瓶盖可以兑换一瓶啤酒，10块钱能买到多少啤酒？？？
+12345678910111213141516171819var Beer = function()&amp;#123;	this.price = 2	this.buy = function(money)&amp;#123;		var count = 0, currentCount = 0,		 tempMoney">
   
     <link rel="alternative" href="/atom.xml" title="懒蛋蛋博客" type="application/atom+xml">
   
@@ -146,27 +152,28 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-undefined" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-买啤酒" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      标签云
+      买啤酒
     </h1>
   
 
         
-        <a href="/tags/index.html" class="archive-article-date">
-  	<time datetime="2017-02-27T01:27:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-27</time>
+        <a href="/2017/03/15/买啤酒/" class="archive-article-date">
+  	<time datetime="2017-03-15T02:30:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-15</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>啤酒2块钱一瓶，两个瓶身可以兑换一瓶啤酒，4个瓶盖可以兑换一瓶啤酒，10块钱能买到多少啤酒？？？</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> Beer = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="keyword">this</span>.price = <span class="number">2</span></div><div class="line">	<span class="keyword">this</span>.buy = <span class="function"><span class="keyword">function</span>(<span class="params">money</span>)</span>&#123;</div><div class="line">		<span class="keyword">var</span> count = <span class="number">0</span>, currentCount = <span class="number">0</span>,</div><div class="line">		 tempMoney = money, currentCap = <span class="number">0</span>, currentBody = <span class="number">0</span></div><div class="line">		<span class="keyword">while</span>(tempMoney &gt; <span class="keyword">this</span>.price)&#123;</div><div class="line">			currentCount = <span class="built_in">parseInt</span>(tempMoney / <span class="keyword">this</span>.price)</div><div class="line">			count += currentCount</div><div class="line">			currentCap += currentCount</div><div class="line">			currentBody += currentCount</div><div class="line">			tempMoney = tempMoney - currentCount * <span class="keyword">this</span>.price</div><div class="line">			tempMoney += (currentCap - currentCap % <span class="number">4</span>) /<span class="number">2</span></div><div class="line">			tempMoney += currentBody - currentBody % <span class="number">2</span></div><div class="line">			currentCap = currentCap % <span class="number">4</span></div><div class="line">			currentBody = currentBody % <span class="number">2</span></div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> count</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
 
       
@@ -245,7 +252,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://landandan.cn/tags/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://landandan.cn/2017/03/15/买啤酒/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -257,6 +264,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2017/03/16/new操作符具体做了什么/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          new操作符具体做了什么
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/13/Markdown语法小窍门（1）/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Markdown语法小窍门（1）</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 
 
@@ -289,7 +315,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
