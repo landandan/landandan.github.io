@@ -8,16 +8,18 @@
   <link rel="dns-prefetch" href="http://landandan.cn">
   <title>React Native Network Request Failed | 懒蛋蛋博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天在React Native上写个网络请求的时候，发现怎么请求都是Possible unhandled promise rejection ``Network Request Failed">
+  <meta name="description" content="今天在React Native上写个网络请求的时候，发现怎么请求都是Possible unhandled promise rejection Network Request Failed但是使用官方文档中的例子的地址https://facebook.github.io/react-native/movies.json又是可以请求的通的，查询Stackoverflow都是说要加catch，然而并没有">
 <meta property="og:type" content="article">
 <meta property="og:title" content="React Native Network Request Failed">
 <meta property="og:url" content="http://landandan.cn/2017/04/19/React-Native-Network-Request-Failed/index.html">
 <meta property="og:site_name" content="懒蛋蛋博客">
-<meta property="og:description" content="今天在React Native上写个网络请求的时候，发现怎么请求都是Possible unhandled promise rejection ``Network Request Failed">
-<meta property="og:updated_time" content="2017-04-19T02:27:50.000Z">
+<meta property="og:description" content="今天在React Native上写个网络请求的时候，发现怎么请求都是Possible unhandled promise rejection Network Request Failed但是使用官方文档中的例子的地址https://facebook.github.io/react-native/movies.json又是可以请求的通的，查询Stackoverflow都是说要加catch，然而并没有">
+<meta property="og:image" content="http://landandan.cn/../images/QQ20170419-101004@2x.png">
+<meta property="og:updated_time" content="2017-04-19T02:37:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React Native Network Request Failed">
-<meta name="twitter:description" content="今天在React Native上写个网络请求的时候，发现怎么请求都是Possible unhandled promise rejection ``Network Request Failed">
+<meta name="twitter:description" content="今天在React Native上写个网络请求的时候，发现怎么请求都是Possible unhandled promise rejection Network Request Failed但是使用官方文档中的例子的地址https://facebook.github.io/react-native/movies.json又是可以请求的通的，查询Stackoverflow都是说要加catch，然而并没有">
+<meta name="twitter:image" content="http://landandan.cn/../images/QQ20170419-101004@2x.png">
   
     <link rel="alternative" href="/atom.xml" title="懒蛋蛋博客" type="application/atom+xml">
   
@@ -169,7 +171,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天在React Native上写个网络请求的时候，发现怎么请求都是<br><code>Possible unhandled promise rejection ``Network Request Failed</code></p>
+        <p>今天在React Native上写个网络请求的时候，发现怎么请求都是<br><code>Possible unhandled promise rejection Network Request Failed</code><br>但是使用官方文档中的例子的地址<code>https://facebook.github.io/react-native/movies.json</code>又是可以请求的通的，<br>查询Stackoverflow都是说要加catch，然而并没有什么卵用，<br>最后发现这篇文章：<a href="http://blog.csdn.net/joyfixing/article/details/52535922" target="_blank" rel="external">http://blog.csdn.net/joyfixing/article/details/52535922</a>,<br>发现原来是IOS的问题，IOS9后默认只能请求HTTPS，咨询了下同事，给出如下方案<br><img src="../images/QQ20170419-101004@2x.png" alt="Xcode设置"><br>重启项目，果然可以请求通了</p>
 
       
 
