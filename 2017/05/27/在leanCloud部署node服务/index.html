@@ -6,14 +6,33 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://landandan.cn">
-  <title>懒蛋蛋博客</title>
+  <title>在leanCloud部署node服务 | 懒蛋蛋博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="懒蛋蛋博客">
-<meta property="og:url" content="http://landandan.cn/index.html">
+  <meta name="description" content="前言123  本来是用的heroKu部署的，但是发现用它有些不方便，heroKu的节点只能选美国或者欧洲，在国内访问会比较慢，另外国内有些API对国外做了限制，无法用国外IP请求到数据。所以特此查询了下是否国内有没有类似的服务商，就找到了leanCloud。
+正文
+注册 不用说，首先就是注册，注册提供（GitHub、微博、QQ）快速注册  
+
+下载安装lean工具  
+12brew updateb">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在leanCloud部署node服务">
+<meta property="og:url" content="http://landandan.cn/2017/05/27/在leanCloud部署node服务/index.html">
 <meta property="og:site_name" content="懒蛋蛋博客">
+<meta property="og:description" content="前言123  本来是用的heroKu部署的，但是发现用它有些不方便，heroKu的节点只能选美国或者欧洲，在国内访问会比较慢，另外国内有些API对国外做了限制，无法用国外IP请求到数据。所以特此查询了下是否国内有没有类似的服务商，就找到了leanCloud。
+正文
+注册 不用说，首先就是注册，注册提供（GitHub、微博、QQ）快速注册  
+
+下载安装lean工具  
+12brew updateb">
+<meta property="og:updated_time" content="2017-05-27T07:48:43.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="懒蛋蛋博客">
+<meta name="twitter:title" content="在leanCloud部署node服务">
+<meta name="twitter:description" content="前言123  本来是用的heroKu部署的，但是发现用它有些不方便，heroKu的节点只能选美国或者欧洲，在国内访问会比较慢，另外国内有些API对国外做了限制，无法用国外IP请求到数据。所以特此查询了下是否国内有没有类似的服务商，就找到了leanCloud。
+正文
+注册 不用说，首先就是注册，注册提供（GitHub、微博、QQ）快速注册  
+
+下载安装lean工具  
+12brew updateb">
   
     <link rel="alternative" href="/atom.xml" title="懒蛋蛋博客" type="application/atom+xml">
   
@@ -145,16 +164,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-在leanCloud部署node服务" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-在leanCloud部署node服务" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/27/在leanCloud部署node服务/">在leanCloud部署node服务</a>
+    <h1 class="article-title" itemprop="name">
+      在leanCloud部署node服务
     </h1>
   
 
@@ -194,66 +211,26 @@
       
 
       
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/27/在leanCloud部署node服务/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-hexo百度Google收录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/26/hexo百度Google收录/">hexo百度Google收录</a>
-    </h1>
-  
-
-        
-        <a href="/2017/05/26/hexo百度Google收录/" class="archive-article-date">
-  	<time datetime="2017-05-26T07:27:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="生成sitemap站点地图"><a href="#生成sitemap站点地图" class="headerlink" title="生成sitemap站点地图"></a>生成sitemap站点地图</h2><p>安装sitemap站点地图自动生成插件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-sitemap --save</div><div class="line">npm install hexo-generator-baidu-sitemap --save</div></pre></td></tr></table></figure>
-<p>在根目录的配置_config.yml中添加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 自动生成sitemap</div><div class="line">sitemap: </div><div class="line">  path: sitemap.xml</div><div class="line">baidusitemap:</div><div class="line">  path: baidusitemap.xml</div></pre></td></tr></table></figure>
-<p>生成及部署</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g &amp;&amp; hexo d</div></pre></td></tr></table></figure>
-<h4 id="百度收录问题"><a href="#百度收录问题" class="headerlink" title="百度收录问题"></a>百度收录问题</h4><p>通过以上操作，发现百度还是没有收录到，sitemap百度抓取失败，原因查找中o(╯□╰)o<br>查看这篇<a href="http://www.cnblogs.com/tengj/p/5357879.html" target="_blank" rel="external">文章</a>说是baidusitemap.xml中文章链接指向GitHub问题，不过我的baidusitemap.xml并没有指向GitHub</p>
-<p>还未找到解决方案</p>
-<h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><p><a href="http://svend.cc/posts/22980/" target="_blank" rel="external">http://svend.cc/posts/22980/</a></p>
-<p><a href="https://jingyan.baidu.com/article/b87fe19e74b3b55218356895.html" target="_blank" rel="external">百度站长文件验证失败 301问题分析及解决方法</a></p>
-<p><a href="http://www.jianshu.com/p/25145964abf3" target="_blank" rel="external">http://www.jianshu.com/p/25145964abf3</a></p>
-
-      
-
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -262,18 +239,74 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/26/hexo百度Google收录/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://landandan.cn/2017/05/27/在leanCloud部署node服务/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/05/26/hexo百度Google收录/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo百度Google收录</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
 
@@ -281,478 +314,10 @@
 
 
   
-    <article id="post-GitHub上fork后的项目如何同步原项目的更新" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/26/GitHub上fork后的项目如何同步原项目的更新/">GitHub上fork后的项目如何同步原项目的更新</a>
-    </h1>
+    <div class="duoshuo"></div>
   
 
-        
-        <a href="/2017/05/26/GitHub上fork后的项目如何同步原项目的更新/" class="archive-article-date">
-  	<time datetime="2017-05-26T05:42:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li><p>给fork配置远程仓库</p>
-<ul>
-<li>使用<code>git remote -v</code>查看远程状态</li>
-<li>添加一个将被同步的上游仓库<br>  <code>git remote add upstream 上游仓库地址</code></li>
-<li><code>git remote -v</code>查看是否添加成功</li>
-</ul>
-</li>
-<li><p>同步给fork</p>
-<ul>
-<li>从上游仓库fetch，并会被存储在本地分支upstream/master<br><code>git fetch upstream</code></li>
-<li>切换到本地master分支（如果不在的话）<br><code>git checkout master</code></li>
-<li>把upstream/master分支合并到本地master<br><code>git merge upstrea/master</code></li>
-<li>如何需要同步到GitHub上的话，执行以下代码即可<br><code>git push origin master</code></li>
-</ul>
-</li>
-</ol>
-<p>文献参考：<a href="https://www.zhihu.com/question/28676261" target="_blank" rel="external">https://www.zhihu.com/question/28676261</a></p>
-<p>如果想直接在GitHub上操作的话<br>参考：<a href="http://www.cnblogs.com/rubylouvre/archive/2013/01/24/2874694.html" target="_blank" rel="external">http://www.cnblogs.com/rubylouvre/archive/2013/01/24/2874694.html</a></p>
 
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/26/GitHub上fork后的项目如何同步原项目的更新/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-面试题列表" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/26/面试题列表/">面试题列表（持续添加中~~~）</a>
-    </h1>
-  
-
-        
-        <a href="/2017/05/26/面试题列表/" class="archive-article-date">
-  	<time datetime="2017-05-26T02:43:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="纯理论题"><a href="#纯理论题" class="headerlink" title="纯理论题"></a>纯理论题</h2><ol>
-<li>JavaScript的数据类型</li>
-<li>GET跟POST的区别</li>
-<li>简述 AJAX 及基本步骤</li>
-<li>HTTP返回的各种状态表示什么意思</li>
-<li>new操作符具体做了什么</li>
-<li>null跟undefined的区别</li>
-<li>JavaScript的原型及原型链</li>
-<li>–</li>
-</ol>
-<h2 id="书写题"><a href="#书写题" class="headerlink" title="书写题"></a>书写题</h2><ol>
-<li><p>实现一个函数 clone()，可以对 JavaScript 中的5种主要的数据类型（包括 Number、String、Object、Array、Boolean）进行值复制</p>
-<p>分析：</p>
-<ul>
-<li>使用 typeof 判断值得类型</li>
-<li>使用 toString 区分数组和对象</li>
-<li>递归函数的使用<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">clone</span>(<span class="params">obj</span>) </span>&#123;</div><div class="line">    <span class="comment">//判断是对象，就进行循环复制</span></div><div class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> obj === <span class="string">'object'</span> &amp;&amp; <span class="keyword">typeof</span> obj !== <span class="string">'null'</span>) &#123;</div><div class="line">        <span class="comment">// 区分是数组还是对象，创建空的数组或对象</span></div><div class="line">        <span class="keyword">var</span> o = <span class="built_in">Object</span>.prototype.toString.call(obj).slice(<span class="number">8</span>, <span class="number">-1</span>) === <span class="string">"Array"</span> ? [] : &#123;&#125;;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> k <span class="keyword">in</span> obj) &#123;</div><div class="line">            <span class="comment">// 如果属性对应的值为对象，则递归复制</span></div><div class="line">            <span class="keyword">if</span>(<span class="keyword">typeof</span> obj[k] === <span class="string">'object'</span> &amp;&amp; <span class="keyword">typeof</span> obj[k] !== <span class="string">'null'</span>)&#123;</div><div class="line">                o[k] = clone(obj[k])</div><div class="line">            &#125;<span class="keyword">else</span>&#123;</div><div class="line">                o[k] = obj[k];</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125; <span class="keyword">else</span> &#123; <span class="comment">//不为对象，直接把值返回</span></div><div class="line">        <span class="keyword">return</span> obj;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> o;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ol>
-<h2 id="算法题"><a href="#算法题" class="headerlink" title="算法题"></a>算法题</h2>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">面试题</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/26/面试题列表/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-React-Native-Network-Request-Failed" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/19/React-Native-Network-Request-Failed/">React Native Network Request Failed</a>
-    </h1>
-  
-
-        
-        <a href="/2017/04/19/React-Native-Network-Request-Failed/" class="archive-article-date">
-  	<time datetime="2017-04-19T02:25:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天在React Native上写个网络请求的时候，发现怎么请求都是<br><code>Possible unhandled promise rejection Network Request Failed</code><br>但是使用官方文档中的例子的地址<code>https://facebook.github.io/react-native/movies.json</code>又是可以请求的通的，<br>查询Stackoverflow都是说要加catch，然而并没有什么卵用，<br>最后发现这篇文章：<a href="http://blog.csdn.net/joyfixing/article/details/52535922" target="_blank" rel="external">http://blog.csdn.net/joyfixing/article/details/52535922</a>,<br>发现原来是IOS的问题，IOS9后默认只能请求HTTPS，咨询了下同事，给出如下方案<br><img src="/images/QQ20170419-101004@2x.png" alt="Xcode设置"><br>重启项目，果然可以请求通了</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/04/19/React-Native-Network-Request-Failed/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-new操作符具体做了什么" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/16/new操作符具体做了什么/">new操作符具体做了什么</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/16/new操作符具体做了什么/" class="archive-article-date">
-  	<time datetime="2017-03-16T02:01:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>用new调用一个函数发生了这些事：<br>（1）新建一个对象<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> instance = <span class="keyword">new</span> <span class="built_in">Object</span>();</div></pre></td></tr></table></figure></p>
-<p>（2）设置原型链<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">instance.__proto__ = F.prototype;</div></pre></td></tr></table></figure></p>
-<p>（3）让F中的this指向instance，执行F的函数体。<br>（4）判断F的返回值类型：<br>如果是值类型，就丢弃它，还是返回instance。<br>如果是引用类型，就返回这个引用类型的对象，替换掉instance。</p>
-<hr>
-<p>注：<br>（1）如果没有写return，相当于return undefined，JavaScript中的函数都是这样。undefined是值类型的，因此丢弃它，返回instance。<br>（2）如果return this相当于返回一个引用类型的对象，它自己就是instance，无所谓替换不替换了。<br>（3）对instance并不需要设置它的constructor属性，这个属性在instance的原型中。<br>console.assert(!p.hasOwnProperty(‘constructor’));<br>console.assert(F.prototype.hasOwnProperty(‘constructor’));<br>而且，任意一个新函数在创建时，原型的constructor就已经设置好了。<br>var G=function(){};<br>console.assert(G.prototype.hasOwnProperty(‘constructor’));<br>console.assert(G.prototype.constructor===G);<br>于是，这也要求我们在对prototype重新赋值的时候，重新指定constructor属性。<br>F.prototype={<br>    constructor:F<br>};</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/16/new操作符具体做了什么/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-买啤酒" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/15/买啤酒/">买啤酒</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/15/买啤酒/" class="archive-article-date">
-  	<time datetime="2017-03-15T02:30:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>啤酒2块钱一瓶，两个瓶身可以兑换一瓶啤酒，4个瓶盖可以兑换一瓶啤酒，10块钱能买到多少啤酒？？？</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> Beer = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="keyword">this</span>.price = <span class="number">2</span></div><div class="line">	<span class="keyword">this</span>.buy = <span class="function"><span class="keyword">function</span>(<span class="params">money</span>)</span>&#123;</div><div class="line">		<span class="keyword">var</span> count = <span class="number">0</span>, currentCount = <span class="number">0</span>,</div><div class="line">		 tempMoney = money, currentCap = <span class="number">0</span>, currentBody = <span class="number">0</span></div><div class="line">		<span class="keyword">while</span>(tempMoney &gt; <span class="keyword">this</span>.price)&#123;</div><div class="line">			currentCount = <span class="built_in">parseInt</span>(tempMoney / <span class="keyword">this</span>.price)</div><div class="line">			count += currentCount</div><div class="line">			currentCap += currentCount</div><div class="line">			currentBody += currentCount</div><div class="line">			tempMoney = tempMoney - currentCount * <span class="keyword">this</span>.price</div><div class="line">			tempMoney += (currentCap - currentCap % <span class="number">4</span>) /<span class="number">2</span></div><div class="line">			tempMoney += currentBody - currentBody % <span class="number">2</span></div><div class="line">			currentCap = currentCap % <span class="number">4</span></div><div class="line">			currentBody = currentBody % <span class="number">2</span></div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> count</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/15/买啤酒/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-Markdown语法小窍门（1）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/13/Markdown语法小窍门（1）/">Markdown语法小窍门（1）</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/13/Markdown语法小窍门（1）/" class="archive-article-date">
-  	<time datetime="2017-03-13T12:47:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="如何在hexo中的文章让代码块换行"><a href="#如何在hexo中的文章让代码块换行" class="headerlink" title="如何在hexo中的文章让代码块换行"></a>如何在hexo中的文章让代码块换行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">演示---------</div><div class="line">  </div><div class="line">演示---------</div></pre></td></tr></table></figure>
-<p>其实就是按个空格，标准的貌似是按两个空格</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/13/Markdown语法小窍门（1）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-JS中__proto__跟prototype区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/13/JS中__proto__跟prototype区别/">JS中__proto__跟prototype区别</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/13/JS中__proto__跟prototype区别/" class="archive-article-date">
-  	<time datetime="2017-03-13T12:30:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[].__proto__ === <span class="built_in">Array</span>.prototype <span class="comment">// true</span></div><div class="line">  </div><div class="line"><span class="built_in">Array</span>.prototype.__proto__ === <span class="built_in">Object</span>.prototype <span class="comment">// true</span></div><div class="line">  </div><div class="line"><span class="built_in">Object</span>.prototype.__proto__ === <span class="literal">null</span> <span class="comment">// true</span></div></pre></td></tr></table></figure>
-<p>通过上面三行代码 应该能区别<code>__proto__</code> 跟 <code>prototype</code> 的区别</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/13/JS中__proto__跟prototype区别/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-hexo文章多个分类及标签问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/13/hexo文章多个分类及标签问题/">hexo文章多个分类及标签问题</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/13/hexo文章多个分类及标签问题/" class="archive-article-date">
-  	<time datetime="2017-03-13T09:54:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="第一种方法"><a href="#第一种方法" class="headerlink" title="第一种方法"></a>第一种方法</h3><p>在文章头部内添加，规则跟无序列表相同<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">tags:</div><div class="line"> - 标签1</div><div class="line"> - 标签2</div><div class="line">categories: </div><div class="line"> - 分类1</div><div class="line"> - 分类2</div></pre></td></tr></table></figure></p>
-<h3 id="第二种方法"><a href="#第二种方法" class="headerlink" title="第二种方法"></a>第二种方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tags: [标签1,标签2,...标签n]</div></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/13/hexo文章多个分类及标签问题/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -789,8 +354,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
