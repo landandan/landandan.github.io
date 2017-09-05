@@ -34,7 +34,7 @@ git remote -v查看是否添加成功
 
 从上游仓库fetch，并会被存储在本地分支upstream/mastergit fetch upstream
 切换到本地master分支（如果不在的话）git check">
-<meta property="og:updated_time" content="2017-05-26T06:09:43.000Z">
+<meta property="og:updated_time" content="2017-09-04T09:57:44.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub上fork后的项目如何同步原项目的更新">
 <meta name="twitter:description" content="给fork配置远程仓库
@@ -82,7 +82,7 @@ git remote -v查看是否添加成功
 		  <h1 class="header-author"><a href="/">Andrew Zhu</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">一个逗逼程序员的blog</p>
+		<p class="header-subtitle">一位有梦想的咸鱼程序员</p>
 		
 
 		<nav class="header-menu">
@@ -90,9 +90,7 @@ git remote -v查看是否添加成功
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/jottings/">随笔</a></li>
-	        
-				<li><a href="/tags/">标签</a></li>
+				<li><a href="/about/">作者</a></li>
 	        
 			</ul>
 		</nav>
@@ -107,7 +105,7 @@ git remote -v查看是否添加成功
     			
             
     			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于</a>
     			
             
 		</nav>
@@ -140,11 +138,9 @@ git remote -v查看是否添加成功
 			  <h1 class="header-author js-header-author">Andrew Zhu</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>一个逗逼程序员的blog<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>一位有梦想的咸鱼程序员<i class="icon icon-quo-right"></i></p>
 			
 			
-			
-				
 			
 				
 			
@@ -163,14 +159,12 @@ git remote -v查看是否添加成功
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/jottings/">随笔</a></li>
-		        
-					<li style="width: 33.333333333333336%"><a href="/tags/">标签</a></li>
+					<li style="width: 50%"><a href="/about/">作者</a></li>
 		        
 				</ul>
 			</nav>
@@ -253,7 +247,37 @@ git remote -v查看是否添加成功
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">GitHub</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Git/" class="article-tag-list-link color4">Git</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/GitHub/" class="article-tag-list-link color2">GitHub</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -443,7 +467,7 @@ git remote -v查看是否添加成功
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于</a></li>
       
         
     </ul>
@@ -464,7 +488,51 @@ git remote -v查看是否添加成功
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitHub</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">MarkDown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">prototype</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">React-Native</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">shadowsocks</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">翻墙</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">VPN</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">HelloWorld</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -476,7 +544,15 @@ git remote -v查看是否添加成功
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+                <a href="javascript:void(0)" class="js-tag color4">new</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">leanCloud</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">node</a>
               </li>
             
             <div class="clearfix"></div>

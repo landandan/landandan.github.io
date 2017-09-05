@@ -5,29 +5,29 @@
     
   <url>
     <loc>http://landandan.cn/2017/05/27/%E5%9C%A8leanCloud%E9%83%A8%E7%BD%B2node%E6%9C%8D%E5%8A%A1/</loc>
-    <lastmod>2017-05-27T07:48:43.000Z</lastmod>
+    <lastmod>2017-09-05T01:49:51.000Z</lastmod>
     <data>
         <display>
         <title>在leanCloud部署node服务</title>
         <pubTime>2017-05-27T07:18:02.000Z</pubTime>
         
+        <tag>随笔</tag>
+         
+        <tag>leanCloud</tag>
+         
+        <tag>node</tag>
+         
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://landandan.cn/2017/05/26/hexo%E7%99%BE%E5%BA%A6Google%E6%94%B6%E5%BD%95/</loc>
-    <lastmod>2017-05-27T02:51:36.000Z</lastmod>
-    <data>
-        <display>
-        <title>hexo百度Google收录</title>
-        <pubTime>2017-05-26T07:27:33.000Z</pubTime>
-        
-         
-           
+             
+              <breadCrumb title="随笔" url="http://landandan.cn/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+             
+              <breadCrumb title="leanCloud" url="http://landandan.cn/categories/%E9%9A%8F%E7%AC%94/leanCloud/"/>
+          
+             
+              <breadCrumb title="node" url="http://landandan.cn/categories/%E9%9A%8F%E7%AC%94/leanCloud/node/"/>
+          
         </display>
     </data>
     </url>
@@ -35,63 +35,24 @@
     
   <url>
     <loc>http://landandan.cn/2017/05/26/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%97%E8%A1%A8/</loc>
-    <lastmod>2017-05-26T06:45:27.000Z</lastmod>
+    <lastmod>2017-09-04T12:28:10.000Z</lastmod>
     <data>
         <display>
         <title>面试题列表（持续添加中~~~）</title>
         <pubTime>2017-05-26T02:43:32.000Z</pubTime>
         
-        <tag>面试题</tag>
-         
         <tag>前端</tag>
          
+        <tag>面试题</tag>
+         
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://landandan.cn/2017/05/26/GitHub%E4%B8%8Afork%E5%90%8E%E7%9A%84%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E5%90%8C%E6%AD%A5%E5%8E%9F%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%9B%B4%E6%96%B0/</loc>
-    <lastmod>2017-05-26T06:09:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>GitHub上fork后的项目如何同步原项目的更新</title>
-        <pubTime>2017-05-26T05:42:14.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://landandan.cn/2017/04/19/React-Native-Network-Request-Failed/</loc>
-    <lastmod>2017-04-19T02:45:37.000Z</lastmod>
-    <data>
-        <display>
-        <title>React Native Network Request Failed</title>
-        <pubTime>2017-04-19T02:25:13.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://landandan.cn/2017/03/16/new%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88/</loc>
-    <lastmod>2017-03-16T02:04:27.000Z</lastmod>
-    <data>
-        <display>
-        <title>new操作符具体做了什么</title>
-        <pubTime>2017-03-16T02:01:17.000Z</pubTime>
-        
-         
-           
+             
+              <breadCrumb title="面试题" url="http://landandan.cn/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+          
+             
+              <breadCrumb title="前端" url="http://landandan.cn/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/%E5%89%8D%E7%AB%AF/"/>
+          
         </display>
     </data>
     </url>
@@ -99,29 +60,66 @@
     
   <url>
     <loc>http://landandan.cn/2017/03/15/%E4%B9%B0%E5%95%A4%E9%85%92/</loc>
-    <lastmod>2017-03-15T02:32:14.000Z</lastmod>
+    <lastmod>2017-09-04T12:27:06.000Z</lastmod>
     <data>
         <display>
         <title>买啤酒</title>
         <pubTime>2017-03-15T02:30:44.000Z</pubTime>
         
+        <tag>前端</tag>
+         
          
            
+             
+              <breadCrumb title="前端" url="http://landandan.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+          
         </display>
     </data>
     </url>
 
     
   <url>
-    <loc>http://landandan.cn/2017/03/13/JS%E4%B8%AD__proto__%E8%B7%9Fprototype%E5%8C%BA%E5%88%AB/</loc>
-    <lastmod>2017-03-13T12:51:52.000Z</lastmod>
+    <loc>http://landandan.cn/2017/04/19/React-Native-Network-Request-Failed/</loc>
+    <lastmod>2017-09-04T12:26:40.000Z</lastmod>
     <data>
         <display>
-        <title>JS中__proto__跟prototype区别</title>
-        <pubTime>2017-03-13T12:30:05.000Z</pubTime>
+        <title>React Native Network Request Failed</title>
+        <pubTime>2017-04-19T02:25:13.000Z</pubTime>
         
+        <tag>前端</tag>
+         
+        <tag>React-Native</tag>
+         
          
            
+             
+              <breadCrumb title="前端" url="http://landandan.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+             
+              <breadCrumb title="React-Native" url="http://landandan.cn/categories/%E5%89%8D%E7%AB%AF/React-Native/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://landandan.cn/2017/03/16/new%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88/</loc>
+    <lastmod>2017-09-04T12:26:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>new操作符具体做了什么</title>
+        <pubTime>2017-03-16T02:01:17.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+        <tag>new</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://landandan.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+          
         </display>
     </data>
     </url>
@@ -129,14 +127,96 @@
     
   <url>
     <loc>http://landandan.cn/2017/03/13/Markdown%E8%AF%AD%E6%B3%95%E5%B0%8F%E7%AA%8D%E9%97%A8%EF%BC%881%EF%BC%89/</loc>
-    <lastmod>2017-03-13T12:49:59.000Z</lastmod>
+    <lastmod>2017-09-04T12:25:44.000Z</lastmod>
     <data>
         <display>
         <title>Markdown语法小窍门（1）</title>
         <pubTime>2017-03-13T12:47:05.000Z</pubTime>
         
+        <tag>随笔</tag>
+         
+        <tag>MarkDown</tag>
+         
          
            
+             
+              <breadCrumb title="随笔" url="http://landandan.cn/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+             
+              <breadCrumb title="MarkDown" url="http://landandan.cn/categories/%E9%9A%8F%E7%AC%94/MarkDown/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://landandan.cn/2017/03/02/MarkDown%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2017-09-04T12:25:38.000Z</lastmod>
+    <data>
+        <display>
+        <title>MarkDown语法</title>
+        <pubTime>2017-03-02T02:17:12.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+        <tag>MarkDown</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="http://landandan.cn/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+             
+              <breadCrumb title="MarkDown" url="http://landandan.cn/categories/%E9%9A%8F%E7%AC%94/MarkDown/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://landandan.cn/2017/03/13/JS%E4%B8%AD__proto__%E8%B7%9Fprototype%E5%8C%BA%E5%88%AB/</loc>
+    <lastmod>2017-09-04T12:25:05.000Z</lastmod>
+    <data>
+        <display>
+        <title>JS中__proto__跟prototype区别</title>
+        <pubTime>2017-03-13T12:30:05.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+        <tag>prototype</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://landandan.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://landandan.cn/2017/05/26/hexo%E7%99%BE%E5%BA%A6Google%E6%94%B6%E5%BD%95/</loc>
+    <lastmod>2017-09-04T12:24:27.000Z</lastmod>
+    <data>
+        <display>
+        <title>hexo百度Google收录</title>
+        <pubTime>2017-05-26T07:27:33.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="http://landandan.cn/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+             
+              <breadCrumb title="Hexo" url="http://landandan.cn/categories/%E9%9A%8F%E7%AC%94/Hexo/"/>
+          
         </display>
     </data>
     </url>
@@ -144,14 +224,79 @@
     
   <url>
     <loc>http://landandan.cn/2017/03/13/hexo%E6%96%87%E7%AB%A0%E5%A4%9A%E4%B8%AA%E5%88%86%E7%B1%BB%E5%8F%8A%E6%A0%87%E7%AD%BE%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2017-03-13T12:45:16.000Z</lastmod>
+    <lastmod>2017-09-04T12:24:21.000Z</lastmod>
     <data>
         <display>
         <title>hexo文章多个分类及标签问题</title>
         <pubTime>2017-03-13T09:54:55.000Z</pubTime>
         
+        <tag>随笔</tag>
+         
+        <tag>Hexo</tag>
+         
          
            
+             
+              <breadCrumb title="随笔" url="http://landandan.cn/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+             
+              <breadCrumb title="Hexo" url="http://landandan.cn/categories/%E9%9A%8F%E7%AC%94/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://landandan.cn/2017/05/26/GitHub%E4%B8%8Afork%E5%90%8E%E7%9A%84%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E5%90%8C%E6%AD%A5%E5%8E%9F%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%9B%B4%E6%96%B0/</loc>
+    <lastmod>2017-09-04T09:57:44.000Z</lastmod>
+    <data>
+        <display>
+        <title>GitHub上fork后的项目如何同步原项目的更新</title>
+        <pubTime>2017-05-26T05:42:14.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+        <tag>GitHub</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="http://landandan.cn/categories/Git/"/>
+          
+             
+              <breadCrumb title="GitHub" url="http://landandan.cn/categories/Git/GitHub/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://landandan.cn/2017/09/04/SS%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2017-09-04T09:55:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>SS服务搭建</title>
+        <pubTime>2017-09-04T09:30:45.000Z</pubTime>
+        
+        <tag>shadowsocks</tag>
+         
+        <tag>翻墙</tag>
+         
+        <tag>VPN</tag>
+         
+         
+           
+             
+              <breadCrumb title="shadowsocks" url="http://landandan.cn/categories/shadowsocks/"/>
+          
+             
+              <breadCrumb title="翻墙" url="http://landandan.cn/categories/shadowsocks/%E7%BF%BB%E5%A2%99/"/>
+          
+             
+              <breadCrumb title="VPN" url="http://landandan.cn/categories/shadowsocks/%E7%BF%BB%E5%A2%99/VPN/"/>
+          
         </display>
     </data>
     </url>
@@ -201,8 +346,6 @@
     </data>
     </url>
 
-    
-    
     
     
 </urlset>
