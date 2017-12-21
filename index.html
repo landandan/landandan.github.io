@@ -154,7 +154,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/07/中高级-前端面试题/">中高级-前端面试题</a>
+      <a class="article-title" href="/2017/12/07/中高级-前端面试题/">中高级-前端面试题（持续更新）</a>
     </h1>
   
 
@@ -179,7 +179,7 @@
 </li>
 </ol>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">factorial</span>(<span class="params">num</span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> arr = [<span class="number">1</span>]</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">2</span>; i &lt;= num; i++) &#123;</div><div class="line">		arr.push(i)</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> arr.reduce(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</div><div class="line">		<span class="keyword">return</span> a * b</div><div class="line">	&#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">feibonaqi</span>(<span class="params">n</span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> arr = [<span class="number">1</span>];</div><div class="line">	<span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</div><div class="line">		<span class="keyword">return</span> [<span class="number">1</span>];</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span> (n == <span class="number">2</span>) &#123;</div><div class="line">		<span class="keyword">return</span> [<span class="number">1</span>, <span class="number">1</span>];</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">helper</span>(<span class="params">a1, a2, n</span>) </span>&#123;</div><div class="line">		<span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</div><div class="line">			<span class="keyword">return</span> arr;</div><div class="line">		&#125; <span class="keyword">else</span> &#123;</div><div class="line">			arr.push(a2)</div><div class="line">			<span class="keyword">return</span> helper(a2, a1 + a2		, --n);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> helper(<span class="number">1</span>, <span class="number">1</span>, n);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">feibonaqi</span>(<span class="params">n</span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> arr = [<span class="number">1</span>];</div><div class="line">	<span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</div><div class="line">		<span class="keyword">return</span> [<span class="number">1</span>];</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span> (n == <span class="number">2</span>) &#123;</div><div class="line">		<span class="keyword">return</span> [<span class="number">1</span>, <span class="number">1</span>];</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">helper</span>(<span class="params">a1, a2, n</span>) </span>&#123;</div><div class="line">		<span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</div><div class="line">			<span class="keyword">return</span> arr;</div><div class="line">		&#125; <span class="keyword">else</span> &#123;</div><div class="line">			arr.push(a2)</div><div class="line">			<span class="keyword">return</span> helper(a2, a1 + a2, --n);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> helper(<span class="number">1</span>, <span class="number">1</span>, n);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>数组去重<br><a href="https://www.cnblogs.com/baiyangyuanzi/p/6726258.html" target="_blank" rel="external">参考文档</a></p>
 <p>实现sort<br><a href="http://www.zhouhua.info/2015/06/18/quicksort/" target="_blank" rel="external">参考文档</a></p>
 
@@ -282,7 +282,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Gitlab忘记root密码"><a href="#Gitlab忘记root密码" class="headerlink" title="Gitlab忘记root密码"></a>Gitlab忘记root密码</h2><p><code>用Gitlab一段时间后就忘记root密码</code><br><a href="http://docs.gitlab.com/ce/security/reset_root_password.html" target="_blank" rel="external">官方修改方案</a></p>
+        <p><code>用Gitlab一段时间后就忘记root密码</code><br><a href="http://docs.gitlab.com/ce/security/reset_root_password.html" target="_blank" rel="external">官方修改方案</a></p>
 <p>Start the console with this command<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gitlab-rails console production</div></pre></td></tr></table></figure></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">user = User.where(id: 1).first</div></pre></td></tr></table></figure>
 <p>or</p>
@@ -368,7 +368,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/18/JQuery相关面试题/">JQuery相关面试题</a>
+      <a class="article-title" href="/2017/10/18/JQuery相关面试题/">JQuery相关面试题（持续更新）</a>
     </h1>
   
 
@@ -1363,6 +1363,10 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">prototype</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
@@ -1372,18 +1376,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">React-Native</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">HelloWorld</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">prototype</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1399,7 +1391,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">new</a>
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1411,7 +1403,15 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">HelloWorld</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Kindle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">new</a>
               </li>
              
               <li class="article-tag-list-item">
