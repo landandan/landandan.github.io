@@ -147,6 +147,423 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-中高级-前端面试题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/07/中高级-前端面试题/">中高级-前端面试题</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/07/中高级-前端面试题/" class="archive-article-date">
+  	<time datetime="2017-12-07T04:02:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>isPrime - 返回true或false, 表示输入的数是否为质数：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">isPrime(<span class="number">0</span>)                          <span class="comment">// false</span></div><div class="line">isPrime(<span class="number">1</span>)                          <span class="comment">// false</span></div><div class="line">isPrime(<span class="number">17</span>)                         <span class="comment">// true</span></div><div class="line">isPrime(<span class="number">10000000000000</span>)             <span class="comment">// false</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 初版</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">isPrime</span>(<span class="params">num</span>) </span>&#123;</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">2</span>; i &lt; num; i++) &#123;</div><div class="line">		<span class="keyword">if</span> (num % i == <span class="number">0</span>) &#123;</div><div class="line">			<span class="keyword">return</span> <span class="literal">false</span></div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> <span class="literal">true</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 优化版</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">isPrime2</span>(<span class="params">num</span>) </span>&#123;</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">2</span>; i &lt; <span class="built_in">Math</span>.sqrt(num); i++) &#123;</div><div class="line">		<span class="keyword">if</span> (num % i == <span class="number">0</span>) &#123;</div><div class="line">			<span class="keyword">return</span> <span class="literal">false</span></div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> <span class="literal">true</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><a href="http://blog.csdn.net/fungleo/article/details/51483844" target="_blank" rel="external">参考文档</a></p>
+<ol>
+<li>factorial - 返回给定数的阶乘的值：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">factorial(<span class="number">0</span>)                        <span class="comment">// 1</span></div><div class="line">factorial(<span class="number">1</span>)                        <span class="comment">// 1</span></div><div class="line">factorial(<span class="number">6</span>)                        <span class="comment">// 720</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">factorial</span>(<span class="params">num</span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> arr = [<span class="number">1</span>]</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">2</span>; i &lt;= num; i++) &#123;</div><div class="line">		arr.push(i)</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> arr.reduce(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</div><div class="line">		<span class="keyword">return</span> a * b</div><div class="line">	&#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">feibonaqi</span>(<span class="params">n</span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> arr = [<span class="number">1</span>];</div><div class="line">	<span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</div><div class="line">		<span class="keyword">return</span> [<span class="number">1</span>];</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span> (n == <span class="number">2</span>) &#123;</div><div class="line">		<span class="keyword">return</span> [<span class="number">1</span>, <span class="number">1</span>];</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">helper</span>(<span class="params">a1, a2, n</span>) </span>&#123;</div><div class="line">		<span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</div><div class="line">			<span class="keyword">return</span> arr;</div><div class="line">		&#125; <span class="keyword">else</span> &#123;</div><div class="line">			arr.push(a2)</div><div class="line">			<span class="keyword">return</span> helper(a2, a1 + a2		, --n);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> helper(<span class="number">1</span>, <span class="number">1</span>, n);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>数组去重<br><a href="https://www.cnblogs.com/baiyangyuanzi/p/6726258.html" target="_blank" rel="external">参考文档</a></p>
+<p>实现sort<br><a href="http://www.zhouhua.info/2015/06/18/quicksort/" target="_blank" rel="external">参考文档</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">面试题</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">中高级</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/面试题/" class="article-tag-list-link color4">面试题</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端/" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/中高级/" class="article-tag-list-link color4">中高级</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/07/中高级-前端面试题/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Gitlab忘记root密码" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/07/Gitlab忘记root密码/">Gitlab忘记root密码</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/07/Gitlab忘记root密码/" class="archive-article-date">
+  	<time datetime="2017-12-07T02:07:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Gitlab忘记root密码"><a href="#Gitlab忘记root密码" class="headerlink" title="Gitlab忘记root密码"></a>Gitlab忘记root密码</h2><p><code>用Gitlab一段时间后就忘记root密码</code><br><a href="http://docs.gitlab.com/ce/security/reset_root_password.html" target="_blank" rel="external">官方修改方案</a></p>
+<p>Start the console with this command<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gitlab-rails console production</div></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">user = User.where(id: 1).first</div></pre></td></tr></table></figure>
+<p>or</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">user = User.find_by(email: <span class="string">'admin@local.host'</span>)</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">user.password = <span class="string">'secret_pass'</span></div><div class="line">user.password_confirmation = <span class="string">'secret_pass'</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">user.save!</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">quit</div></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Gitlab</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Git/" class="article-tag-list-link color4">Git</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Gitlab/" class="article-tag-list-link color2">Gitlab</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/07/Gitlab忘记root密码/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-JQuery相关面试题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/18/JQuery相关面试题/">JQuery相关面试题</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/18/JQuery相关面试题/" class="archive-article-date">
+  	<time datetime="2017-10-18T07:11:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li><p>JavaScript window.onload 事件和 jQuery ready 函数有何不同？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">window.onload:</div><div class="line">    除了要等待 DOM 被创建还要等到包括大型图片、音频、视频在内的所有外部资源都完全加载。</div><div class="line">    如果加载图片和媒体内容花费了大量时间，用户就会感受到定义在 window.onload 事件上的代码在执行时有明显的延迟。</div><div class="line">    </div><div class="line">$(document).ready():</div><div class="line">    只需对 DOM 树的等待，而无需对图像或外部资源加载的等待，从而执行起来更快。</div><div class="line">    可以多次使用它，浏览器会按顺序执行。</div></pre></td></tr></table></figure>
+</li>
+<li><p>JQuery中有哪些选择器？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">基本选择器：</div><div class="line">    元素选择器</div><div class="line">        $(&apos;div&apos;)</div><div class="line">    属性选择器</div><div class="line">        $(&quot;[href]&quot;)</div><div class="line">    CSS 选择器</div><div class="line">        $(&apos;#id&apos;)</div><div class="line">        $(&apos;.class&apos;)</div><div class="line">层次选择器：</div><div class="line">过滤选择器：</div></pre></td></tr></table></figure>
+</li>
+<li><p>使用JQuery实现：获取位于id为company下value为tianli的option元素。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&quot;#compay [value=&apos;tinali&apos;]&quot;) || $(&quot;#compay&gt;[value=&apos;tinali&apos;]&quot;)</div></pre></td></tr></table></figure>
+</li>
+<li><p>$.get()、$.post()、jQuery.ajax() 中可配置哪些参数？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://www.w3school.com.cn/jquery/ajax_ajax.asp</div></pre></td></tr></table></figure></li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">面试题</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">JQuery</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/面试题/" class="article-tag-list-link color4">面试题</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端/" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/JQuery/" class="article-tag-list-link color2">JQuery</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/10/18/JQuery相关面试题/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-关于Kindle文字变浅" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/07/关于Kindle文字变浅/">关于Kindle文字变浅</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/07/关于Kindle文字变浅/" class="archive-article-date">
+  	<time datetime="2017-09-07T01:41:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><code>Kindle放了好久没用，拿出来发现屏幕的文字变的很淡</code></p>
+<h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>太长时间没有使用，导致油墨粘结</p>
+<h3 id="解决方案（亲测有效）"><a href="#解决方案（亲测有效）" class="headerlink" title="解决方案（亲测有效）"></a>解决方案（亲测有效）</h3><ul>
+<li>设置 -&gt; 阅读选项 -&gt; 页面刷新（开启）</li>
+<li>连续使用两三天就能修复<br><code>注： 质保期间可以直接找亚马逊更换</code></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Kindle</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Kindle/" class="article-tag-list-link color2">Kindle</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/07/关于Kindle文字变浅/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-SS服务搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -632,7 +1049,8 @@
 <li>new操作符具体做了什么</li>
 <li>null跟undefined的区别</li>
 <li>JavaScript的原型及原型链</li>
-<li>–</li>
+<li>请描述一下 cookies，sessionStorage 和 localStorage 的区别？<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">cookie是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。</div><div class="line">sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。</div><div class="line">共同点：</div><div class="line">    都是保存在浏览器端，且同源的。</div><div class="line"></div><div class="line">区别：</div><div class="line">    cookie数据始终在同源的http请求中携带（即使不需要），即在浏览器和服务器间来回传递。</div><div class="line">    cookie数据还有路径（path）的概念，可以限制cookie只属于某个路径下。</div><div class="line">    一般作会话标识。</div><div class="line"></div><div class="line">存储大小：</div><div class="line">    cookie数据大小不能超过4k。</div><div class="line">    sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。</div><div class="line"></div><div class="line">有效期：</div><div class="line">    cookie          设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭</div><div class="line">    localStorage    存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；</div><div class="line">    sessionStorage  数据在当前浏览器窗口关闭后自动删除。</div><div class="line">    </div><div class="line">作用域：</div><div class="line">    cookie          所有的同源窗口都共享</div><div class="line">    localStorage    所有的同源窗口都共享   </div><div class="line">    sessionStorage  仅限当前窗口</div></pre></td></tr></table></figure>
+</li>
 </ol>
 <h2 id="书写题"><a href="#书写题" class="headerlink" title="书写题"></a>书写题</h2><ol>
 <li><p>实现一个函数 clone()，可以对 JavaScript 中的5种主要的数据类型（包括 Number、String、Object、Array、Boolean）进行值复制</p>
@@ -644,8 +1062,10 @@
 </li>
 </ul>
 </li>
+<li><p>实现柯里化函数</p>
+<h2 id="算法题"><a href="#算法题" class="headerlink" title="算法题"></a>算法题</h2></li>
 </ol>
-<h2 id="算法题"><a href="#算法题" class="headerlink" title="算法题"></a>算法题</h2>
+
       
 
       
@@ -658,11 +1078,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">面试题</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">面试题</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
         		</li>
       		
 		</ul>
@@ -810,368 +1230,6 @@
 
 
   
-    <article id="post-new操作符具体做了什么" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/16/new操作符具体做了什么/">new操作符具体做了什么</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/16/new操作符具体做了什么/" class="archive-article-date">
-  	<time datetime="2017-03-16T02:01:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>用new调用一个函数发生了这些事：<br>（1）新建一个对象<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> instance = <span class="keyword">new</span> <span class="built_in">Object</span>();</div></pre></td></tr></table></figure></p>
-<p>（2）设置原型链<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">instance.__proto__ = F.prototype;</div></pre></td></tr></table></figure></p>
-<p>（3）让F中的this指向instance，执行F的函数体。<br>（4）判断F的返回值类型：<br>如果是值类型，就丢弃它，还是返回instance。<br>如果是引用类型，就返回这个引用类型的对象，替换掉instance。</p>
-<hr>
-<p>注：<br>（1）如果没有写return，相当于return undefined，JavaScript中的函数都是这样。undefined是值类型的，因此丢弃它，返回instance。<br>（2）如果return this相当于返回一个引用类型的对象，它自己就是instance，无所谓替换不替换了。<br>（3）对instance并不需要设置它的constructor属性，这个属性在instance的原型中。<br>console.assert(!p.hasOwnProperty(‘constructor’));<br>console.assert(F.prototype.hasOwnProperty(‘constructor’));<br>而且，任意一个新函数在创建时，原型的constructor就已经设置好了。<br>var G=function(){};<br>console.assert(G.prototype.hasOwnProperty(‘constructor’));<br>console.assert(G.prototype.constructor===G);<br>于是，这也要求我们在对prototype重新赋值的时候，重新指定constructor属性。<br>F.prototype={<br>    constructor:F<br>};</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">new</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/16/new操作符具体做了什么/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-买啤酒" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/15/买啤酒/">买啤酒</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/15/买啤酒/" class="archive-article-date">
-  	<time datetime="2017-03-15T02:30:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>啤酒2块钱一瓶，两个瓶身可以兑换一瓶啤酒，4个瓶盖可以兑换一瓶啤酒，10块钱能买到多少啤酒？？？</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> Beer = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="keyword">this</span>.price = <span class="number">2</span></div><div class="line">	<span class="keyword">this</span>.buy = <span class="function"><span class="keyword">function</span>(<span class="params">money</span>)</span>&#123;</div><div class="line">		<span class="keyword">var</span> count = <span class="number">0</span>, currentCount = <span class="number">0</span>,</div><div class="line">		 tempMoney = money, currentCap = <span class="number">0</span>, currentBody = <span class="number">0</span></div><div class="line">		<span class="keyword">while</span>(tempMoney &gt; <span class="keyword">this</span>.price)&#123;</div><div class="line">			currentCount = <span class="built_in">parseInt</span>(tempMoney / <span class="keyword">this</span>.price)</div><div class="line">			count += currentCount</div><div class="line">			currentCap += currentCount</div><div class="line">			currentBody += currentCount</div><div class="line">			tempMoney = tempMoney - currentCount * <span class="keyword">this</span>.price</div><div class="line">			tempMoney += (currentCap - currentCap % <span class="number">4</span>) /<span class="number">2</span></div><div class="line">			tempMoney += currentBody - currentBody % <span class="number">2</span></div><div class="line">			currentCap = currentCap % <span class="number">4</span></div><div class="line">			currentBody = currentBody % <span class="number">2</span></div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> count</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/15/买啤酒/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Markdown语法小窍门（1）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/13/Markdown语法小窍门（1）/">Markdown语法小窍门（1）</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/13/Markdown语法小窍门（1）/" class="archive-article-date">
-  	<time datetime="2017-03-13T12:47:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="如何在hexo中的文章让代码块换行"><a href="#如何在hexo中的文章让代码块换行" class="headerlink" title="如何在hexo中的文章让代码块换行"></a>如何在hexo中的文章让代码块换行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">演示---------</div><div class="line">  </div><div class="line">演示---------</div></pre></td></tr></table></figure>
-<p>其实就是按个空格，标准的貌似是按两个空格</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">MarkDown</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/随笔/" class="article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/MarkDown/" class="article-tag-list-link color4">MarkDown</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/13/Markdown语法小窍门（1）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-JS中__proto__跟prototype区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/13/JS中__proto__跟prototype区别/">JS中__proto__跟prototype区别</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/13/JS中__proto__跟prototype区别/" class="archive-article-date">
-  	<time datetime="2017-03-13T12:30:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[].__proto__ === <span class="built_in">Array</span>.prototype <span class="comment">// true</span></div><div class="line">  </div><div class="line"><span class="built_in">Array</span>.prototype.__proto__ === <span class="built_in">Object</span>.prototype <span class="comment">// true</span></div><div class="line">  </div><div class="line"><span class="built_in">Object</span>.prototype.__proto__ === <span class="literal">null</span> <span class="comment">// true</span></div></pre></td></tr></table></figure>
-<p>通过上面三行代码 应该能区别<code>__proto__</code> 跟 <code>prototype</code> 的区别</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">prototype</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/13/JS中__proto__跟prototype区别/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1281,11 +1339,27 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">面试题</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">JQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">GitHub</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1297,7 +1371,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+                <a href="javascript:void(0)" class="js-tag color3">React-Native</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">HelloWorld</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1305,7 +1383,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">React-Native</a>
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1321,15 +1399,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">HelloWorld</a>
+                <a href="javascript:void(0)" class="js-tag color4">new</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">面试题</a>
+                <a href="javascript:void(0)" class="js-tag color4">中高级</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1337,7 +1411,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">new</a>
+                <a href="javascript:void(0)" class="js-tag color2">Kindle</a>
               </li>
              
               <li class="article-tag-list-item">
