@@ -10340,6 +10340,9 @@ rules:
  - DOMAIN-SUFFIX,worldscientific.com,🎯 全球直连
  - DOMAIN-SUFFIX,code.hq.cpic.com,🎯 全球直连
  - DOMAIN-SUFFIX,cicd.hq.cpic.com,🎯 全球直连
+ - DOMAIN-SUFFIX,msstatic.com,🎯 全球直连
+ - DOMAIN-SUFFIX,120ask.com,🎯 全球直连
+ - DOMAIN-SUFFIX,120askimages.com,🎯 全球直连
  - DOMAIN-SUFFIX,cn,🎯 全球直连
  - DOMAIN-SUFFIX,360in.com,🎯 全球直连
  - DOMAIN-SUFFIX,51ym.me,🎯 全球直连
@@ -10450,6 +10453,7 @@ rules:
  - DOMAIN-SUFFIX,zhihu.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
+ - DOMAIN-SUFFIX,note.youdao.com,🎯 全球直连
  - DOMAIN,download.jetbrains.com,🎯 全球直连
  - DOMAIN,images-cn.ssl-images-amazon.com,🎯 全球直连
  - DOMAIN,cdn.angruo.com,🎯 全球直连
