@@ -10457,6 +10457,7 @@ rules:
  - DOMAIN,download.jetbrains.com,🎯 全球直连
  - DOMAIN,images-cn.ssl-images-amazon.com,🎯 全球直连
  - DOMAIN,cdn.angruo.com,🎯 全球直连
+ - IP-CIDR,58.246.0.0/18,🎯 全球直连,no-resolve
  - IP-CIDR,119.28.28.28/32,🎯 全球直连,no-resolve
  - DOMAIN-KEYWORD,aria2,🎯 全球直连
  - DOMAIN-KEYWORD,xunlei,🎯 全球直连
