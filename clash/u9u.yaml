@@ -38,9 +38,17 @@ proxies:
   - {name: 🇸🇬 u9un-v2-SG-Singapore 3, server: sg3.u9v2.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: sg3.u9v2.top}}
   - {name: 🇸🇬 u9un-v2-SG-Singapore 4, server: sg4.u9v2.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: sg4.u9v2.top}}
   - {name: 🇸🇬 u9un-v2-SG-Singapore 5, server: sg5.u9v2.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: sg5.u9v2.top}}
+  - {name: 🇸🇬 u9un-v2-SG-Singapore 6, server: sg6.u9v2v2.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: sg6.u9v2v2.top}}
+  - {name: 🇸🇬 u9un-v2-SG-Singapore 7, server: sg7.u9v2v2.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: sg7.u9v2v2.top}}
+  - {name: 🇸🇬 u9un-v2-SG-Singapore 8, server: sg8.u9v2v2.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: sg8.u9v2v2.top}}
+  - {name: 🇸🇬 u9un-v2-SG-Singapore 9, server: sg9.u9v2v2.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: sg9.u9v2v2.top}}
+  - {name: 🇸🇬 u9un-v2-SG-Singapore 0, server: sg0.u9v2v2.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: sg0.u9v2v2.top}}
   - {name: 🇮🇳 u9un-v2-IN-India 1, server: in1.v2u9.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: in1.v2u9.top}}
   - {name: 🇮🇳 u9un-v2-IN-India 2, server: in2.v2u9.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: in2.v2u9.top}}
-  - {name: 🇰🇷 u9un-v2-KR-Seoul, server: kr1.v2u9.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: kr1.v2u9.top}}
+  - {name: 🇰🇷 u9un-v2-KR-Seoul1, server: kr1.v2u9.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: kr1.v2u9.top}}
+  - {name: 🇰🇷 u9un-v2-KR-Seoul2, server: kr2.u9v2.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: kr2.u9v2.top}}
+  - {name: 🇰🇷 u9un-v2-KR-Seoul3, server: kr3.u9v2.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: kr3.u9v2.top}}
+  - {name: 🇰🇷 u9un-v2-KR-Seoul4, server: kr4.u9v2.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: kr4.u9v2.top}}
   - {name: 🇲🇾 u9un-v2-MY-Malaysia, server: my1.v2u9.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: my1.v2u9.top}}
   - {name: 🇹🇭 u9un-v2-TH-Thailand, server: th1.v2u9.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: th1.v2u9.top}}
   - {name: 🇺🇸 u9un-v2-US-LosAngeles, server: us1.u9v2v2.top, port: 443, type: vmess, uuid: 6E5C88B4-2C39-3714-C881-A4A631A52FD6, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /, ws-headers: {Host: us1.u9v2v2.top}}
@@ -87,9 +95,17 @@ proxy-groups:
       - 🇸🇬 u9un-v2-SG-Singapore 3
       - 🇸🇬 u9un-v2-SG-Singapore 4
       - 🇸🇬 u9un-v2-SG-Singapore 5
+      - 🇸🇬 u9un-v2-SG-Singapore 6
+      - 🇸🇬 u9un-v2-SG-Singapore 7
+      - 🇸🇬 u9un-v2-SG-Singapore 8
+      - 🇸🇬 u9un-v2-SG-Singapore 9
+      - 🇸🇬 u9un-v2-SG-Singapore 0
       - 🇮🇳 u9un-v2-IN-India 1
       - 🇮🇳 u9un-v2-IN-India 2
-      - 🇰🇷 u9un-v2-KR-Seoul
+      - 🇰🇷 u9un-v2-KR-Seoul1
+      - 🇰🇷 u9un-v2-KR-Seoul2
+      - 🇰🇷 u9un-v2-KR-Seoul3
+      - 🇰🇷 u9un-v2-KR-Seoul4
       - 🇲🇾 u9un-v2-MY-Malaysia
       - 🇹🇭 u9un-v2-TH-Thailand
       - 🇺🇸 u9un-v2-US-LosAngeles
@@ -135,9 +151,17 @@ proxy-groups:
       - 🇸🇬 u9un-v2-SG-Singapore 3
       - 🇸🇬 u9un-v2-SG-Singapore 4
       - 🇸🇬 u9un-v2-SG-Singapore 5
+      - 🇸🇬 u9un-v2-SG-Singapore 6
+      - 🇸🇬 u9un-v2-SG-Singapore 7
+      - 🇸🇬 u9un-v2-SG-Singapore 8
+      - 🇸🇬 u9un-v2-SG-Singapore 9
+      - 🇸🇬 u9un-v2-SG-Singapore 0
       - 🇮🇳 u9un-v2-IN-India 1
       - 🇮🇳 u9un-v2-IN-India 2
-      - 🇰🇷 u9un-v2-KR-Seoul
+      - 🇰🇷 u9un-v2-KR-Seoul1
+      - 🇰🇷 u9un-v2-KR-Seoul2
+      - 🇰🇷 u9un-v2-KR-Seoul3
+      - 🇰🇷 u9un-v2-KR-Seoul4
       - 🇲🇾 u9un-v2-MY-Malaysia
       - 🇹🇭 u9un-v2-TH-Thailand
       - 🇺🇸 u9un-v2-US-LosAngeles
@@ -184,9 +208,17 @@ proxy-groups:
       - 🇸🇬 u9un-v2-SG-Singapore 3
       - 🇸🇬 u9un-v2-SG-Singapore 4
       - 🇸🇬 u9un-v2-SG-Singapore 5
+      - 🇸🇬 u9un-v2-SG-Singapore 6
+      - 🇸🇬 u9un-v2-SG-Singapore 7
+      - 🇸🇬 u9un-v2-SG-Singapore 8
+      - 🇸🇬 u9un-v2-SG-Singapore 9
+      - 🇸🇬 u9un-v2-SG-Singapore 0
       - 🇮🇳 u9un-v2-IN-India 1
       - 🇮🇳 u9un-v2-IN-India 2
-      - 🇰🇷 u9un-v2-KR-Seoul
+      - 🇰🇷 u9un-v2-KR-Seoul1
+      - 🇰🇷 u9un-v2-KR-Seoul2
+      - 🇰🇷 u9un-v2-KR-Seoul3
+      - 🇰🇷 u9un-v2-KR-Seoul4
       - 🇲🇾 u9un-v2-MY-Malaysia
       - 🇹🇭 u9un-v2-TH-Thailand
       - 🇺🇸 u9un-v2-US-LosAngeles
@@ -237,9 +269,17 @@ proxy-groups:
       - 🇸🇬 u9un-v2-SG-Singapore 3
       - 🇸🇬 u9un-v2-SG-Singapore 4
       - 🇸🇬 u9un-v2-SG-Singapore 5
+      - 🇸🇬 u9un-v2-SG-Singapore 6
+      - 🇸🇬 u9un-v2-SG-Singapore 7
+      - 🇸🇬 u9un-v2-SG-Singapore 8
+      - 🇸🇬 u9un-v2-SG-Singapore 9
+      - 🇸🇬 u9un-v2-SG-Singapore 0
       - 🇮🇳 u9un-v2-IN-India 1
       - 🇮🇳 u9un-v2-IN-India 2
-      - 🇰🇷 u9un-v2-KR-Seoul
+      - 🇰🇷 u9un-v2-KR-Seoul1
+      - 🇰🇷 u9un-v2-KR-Seoul2
+      - 🇰🇷 u9un-v2-KR-Seoul3
+      - 🇰🇷 u9un-v2-KR-Seoul4
       - 🇲🇾 u9un-v2-MY-Malaysia
       - 🇹🇭 u9un-v2-TH-Thailand
       - 🇺🇸 u9un-v2-US-LosAngeles
@@ -285,9 +325,17 @@ proxy-groups:
       - 🇸🇬 u9un-v2-SG-Singapore 3
       - 🇸🇬 u9un-v2-SG-Singapore 4
       - 🇸🇬 u9un-v2-SG-Singapore 5
+      - 🇸🇬 u9un-v2-SG-Singapore 6
+      - 🇸🇬 u9un-v2-SG-Singapore 7
+      - 🇸🇬 u9un-v2-SG-Singapore 8
+      - 🇸🇬 u9un-v2-SG-Singapore 9
+      - 🇸🇬 u9un-v2-SG-Singapore 0
       - 🇮🇳 u9un-v2-IN-India 1
       - 🇮🇳 u9un-v2-IN-India 2
-      - 🇰🇷 u9un-v2-KR-Seoul
+      - 🇰🇷 u9un-v2-KR-Seoul1
+      - 🇰🇷 u9un-v2-KR-Seoul2
+      - 🇰🇷 u9un-v2-KR-Seoul3
+      - 🇰🇷 u9un-v2-KR-Seoul4
       - 🇲🇾 u9un-v2-MY-Malaysia
       - 🇹🇭 u9un-v2-TH-Thailand
       - 🇺🇸 u9un-v2-US-LosAngeles
@@ -334,9 +382,17 @@ proxy-groups:
       - 🇸🇬 u9un-v2-SG-Singapore 3
       - 🇸🇬 u9un-v2-SG-Singapore 4
       - 🇸🇬 u9un-v2-SG-Singapore 5
+      - 🇸🇬 u9un-v2-SG-Singapore 6
+      - 🇸🇬 u9un-v2-SG-Singapore 7
+      - 🇸🇬 u9un-v2-SG-Singapore 8
+      - 🇸🇬 u9un-v2-SG-Singapore 9
+      - 🇸🇬 u9un-v2-SG-Singapore 0
       - 🇮🇳 u9un-v2-IN-India 1
       - 🇮🇳 u9un-v2-IN-India 2
-      - 🇰🇷 u9un-v2-KR-Seoul
+      - 🇰🇷 u9un-v2-KR-Seoul1
+      - 🇰🇷 u9un-v2-KR-Seoul2
+      - 🇰🇷 u9un-v2-KR-Seoul3
+      - 🇰🇷 u9un-v2-KR-Seoul4
       - 🇲🇾 u9un-v2-MY-Malaysia
       - 🇹🇭 u9un-v2-TH-Thailand
       - 🇺🇸 u9un-v2-US-LosAngeles
@@ -392,9 +448,17 @@ proxy-groups:
       - 🇸🇬 u9un-v2-SG-Singapore 3
       - 🇸🇬 u9un-v2-SG-Singapore 4
       - 🇸🇬 u9un-v2-SG-Singapore 5
+      - 🇸🇬 u9un-v2-SG-Singapore 6
+      - 🇸🇬 u9un-v2-SG-Singapore 7
+      - 🇸🇬 u9un-v2-SG-Singapore 8
+      - 🇸🇬 u9un-v2-SG-Singapore 9
+      - 🇸🇬 u9un-v2-SG-Singapore 0
       - 🇮🇳 u9un-v2-IN-India 1
       - 🇮🇳 u9un-v2-IN-India 2
-      - 🇰🇷 u9un-v2-KR-Seoul
+      - 🇰🇷 u9un-v2-KR-Seoul1
+      - 🇰🇷 u9un-v2-KR-Seoul2
+      - 🇰🇷 u9un-v2-KR-Seoul3
+      - 🇰🇷 u9un-v2-KR-Seoul4
       - 🇲🇾 u9un-v2-MY-Malaysia
       - 🇹🇭 u9un-v2-TH-Thailand
       - 🇺🇸 u9un-v2-US-LosAngeles
