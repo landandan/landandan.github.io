@@ -2758,7 +2758,6 @@ rules:
  - DOMAIN-SUFFIX,clkservice.youdao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,clkservice2.dict.youdao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,cloud.codenow.cn,🛑 全球拦截
- - DOMAIN-SUFFIX,cloud.rovio.com,🛑 全球拦截
  - DOMAIN-SUFFIX,cloud.zyiis.net,🛑 全球拦截
  - DOMAIN-SUFFIX,cloudad.asia,🛑 全球拦截
  - DOMAIN-SUFFIX,cloudcdn.yousee.com,🛑 全球拦截
@@ -2811,7 +2810,6 @@ rules:
  - DOMAIN-SUFFIX,cocounion.com,🛑 全球拦截
  - DOMAIN-SUFFIX,cod.southmoney.com,🛑 全球拦截
  - DOMAIN-SUFFIX,code.3shangyou.com,🛑 全球拦截
- - DOMAIN-SUFFIX,code.createjs.com,🛑 全球拦截
  - DOMAIN-SUFFIX,code.fastclick.net,🛑 全球拦截
  - DOMAIN-SUFFIX,code.hajuwang.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,code.hot-mob.com,🛑 全球拦截
@@ -6394,7 +6392,6 @@ rules:
  - DOMAIN-SUFFIX,promote.biz.weibo.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,promote.caixin.com,🛑 全球拦截
  - DOMAIN-SUFFIX,promote.pair.com,🛑 全球拦截
- - DOMAIN-SUFFIX,promotion.aliyun.com,🛑 全球拦截
  - DOMAIN-SUFFIX,promotion.gomlab.com,🛑 全球拦截
  - DOMAIN-SUFFIX,promotions.iasbet.com,🛑 全球拦截
  - DOMAIN-SUFFIX,propellerads.com,🛑 全球拦截
@@ -6693,7 +6690,6 @@ rules:
  - DOMAIN-SUFFIX,rotator.tradetracker.net,🛑 全球拦截
  - DOMAIN-SUFFIX,router.bittorrent.com,🛑 全球拦截
  - DOMAIN-SUFFIX,router.gwdang.com,🛑 全球拦截
- - DOMAIN-SUFFIX,rovio-news-app.angrybirdsgame.com,🛑 全球拦截
  - DOMAIN-SUFFIX,rp.crasheye.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,rp.gwallet.com,🛑 全球拦截
  - DOMAIN-SUFFIX,rpaulfrank.com,🛑 全球拦截
@@ -9231,7 +9227,6 @@ rules:
  - DOMAIN-SUFFIX,91veg.com,🛑 全球拦截
  - DOMAIN-SUFFIX,9s6q.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,adsame.com,🛑 全球拦截
- - DOMAIN-SUFFIX,aiclk.com,🛑 全球拦截
  - DOMAIN-SUFFIX,akuai.top,🛑 全球拦截
  - DOMAIN-SUFFIX,atplay.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,baiwanchuangyi.com,🛑 全球拦截
@@ -9585,6 +9580,7 @@ rules:
  - DOMAIN-SUFFIX,bilivideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
  - DOMAIN-SUFFIX,im9.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
  - DOMAIN-KEYWORD,qiyi,🌏 国内媒体
  - DOMAIN-SUFFIX,qy.net,🌏 国内媒体
  - IP-CIDR,101.227.0.0/16,🌏 国内媒体,no-resolve
@@ -10530,6 +10526,7 @@ rules:
  - DOMAIN,cdn.angruo.com,🎯 全球直连
  - IP-CIDR,58.246.0.0/18,🎯 全球直连,no-resolve
  - IP-CIDR,119.28.28.28/32,🎯 全球直连,no-resolve
+ - IP-CIDR,182.254.116.0/24,🎯 全球直连
  - DOMAIN-KEYWORD,aria2,🎯 全球直连
  - DOMAIN-KEYWORD,xunlei,🎯 全球直连
  - DOMAIN-KEYWORD,yunpan,🎯 全球直连
